@@ -2,6 +2,20 @@
 
 > App to suggest locally produced seasonal ingredients and allow recipies to be suggested based on ones selected.
 
+## Setup
+
+type:
+
+npm install
+
+npm install -g npm
+
+and then to check it is all working:
+
+npm run dev
+
+
+
 ## Build Setup
 
 ``` bash
