@@ -1,5 +1,10 @@
 # seasonal-regional
 
+<a href="https://codeclimate.com/github/junolouise/Seasonal-Regional/maintainability"><img src="https://api.codeclimate.com/v1/badges/896fdc0c3cba81896723/maintainability" /></a>
+
+<a href="https://codeclimate.com/github/junolouise/Seasonal-Regional/test_coverage"><img src="https://api.codeclimate.com/v1/badges/896fdc0c3cba81896723/test_coverage" /></a>
+
+
 > App to suggest locally produced seasonal ingredients and allow recipies to be suggested based on ones selected.
 
 ## Setup
