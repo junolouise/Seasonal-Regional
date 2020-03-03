@@ -9,7 +9,7 @@ class DatabaseConnection
     @connection
   end 
 
-   def self.query(string)
+  def self.query(string)
     @connection.exec(string)
-   end 
+  end 
 end 

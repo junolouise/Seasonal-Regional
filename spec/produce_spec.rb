@@ -1,4 +1,4 @@
-require 'produce.rb'
+require 'produce'
 
 describe Produce do 
   describe '.all' do 
