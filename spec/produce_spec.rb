@@ -9,4 +9,11 @@ describe Produce do
       expect(produce).to include('lettuce')
     end
   end
+
+  describe '.in_season' do
+    it 'returns a list of the produce in season' do
+      produce = Produce.in_season
+      expect(produce).to include('bramley apple')
+    end
+  end
 end 
