@@ -22,7 +22,7 @@ CREATE TABLE "public"."produce" (
     PRIMARY KEY ("id")
 );
 
-INSERT INTO "public"."produce" ("id", "name", "date range 1", "date range 2") VALUES
+INSERT INTO "public"."produce" ("id", "name", "daterange1", "daterange2") VALUES
 ('1', 'apple', '[2020-01-01,2020-02-29)', '[2020-09-01,2020-12-31)'),
 ('2', 'apricot', '[2020-05-01,2020-09-30)', NULL),
 ('3', 'asparagus', '[2020-06-01,2020-07-31)', NULL),
