@@ -2,6 +2,9 @@
   "name": "seasonal-regional",
   "description": "App to suggest locally produced seasonal ingredients and allow recipies to be suggested based on ones selected.",
   "version": "1.0.0",
+  "engines": {
+    "node": "12.12.0"
+  },
   "author": "Ben Auld",
   "license": "MIT",
   "private": true,
