@@ -17,8 +17,8 @@ CREATE SEQUENCE IF NOT EXISTS produce_id_seq;
 CREATE TABLE "public"."produce" (
     "id" int4 NOT NULL DEFAULT nextval('produce_id_seq'::regclass),
     "name" varchar NOT NULL,
-    "date range 1" daterange NOT NULL,
-    "date range 2" daterange,
+    "daterange1" daterange NOT NULL,
+    "daterange2" daterange,
     PRIMARY KEY ("id")
 );
 
