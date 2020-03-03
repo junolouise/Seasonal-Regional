@@ -1,10 +1,8 @@
-require 'pg'
+require './lib/database_connection'
+
 class Produce
-  def self.all
-  connection = PG.connect(dbname: 'hangry_development')
-  result = connection.exec('SELECT * FROM produce')
+ def self.all
+  result = DatabaseConnection.query('SELECT * FROM produce')
   result.map {|item| item['name']}
-
-  end 
-
+ end 
 end 
