@@ -7,6 +7,14 @@
 
 > App to suggest locally produced seasonal ingredients and allow recipies to be suggested based on ones selected.
 
+## Process
+
+To document our project we are using Trello and a Medium blog:
+
+https://trello.com/b/D1MoWCuX/hangry
+
+https://medium.com/@katierodgers95
+
 ## Setup
 
 type:
