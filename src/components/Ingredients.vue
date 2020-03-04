@@ -1,12 +1,13 @@
 <template>
   <div id="ingredients">
-    <form>
-      <label>Filter:</label>
-      <input type="text" v-model="filterIngredients" />
-    </form>
+    <input
+      type="text"
+      v-model="filterIngredients"
+      placeholder="search ingredients"
+    />
     <ul>
       <li
-        v-for="(ingredient, index) in ingredients"
+        v-for="(ingredient, index) in filteredIngredients"
         :key="index"
         v-on:click="ingredient.show = !ingredient.show"
       >
@@ -51,6 +52,19 @@ export default {
         { name: "Watercress", season: "May, Jun, Jul, Aug, Sep", show: false }
       ]
     };
+  },
+  computed: {
+    filteredIngredients: function() {
+      return this.ingredients.filter(ingredient => {
+        return ingredient.name.match(this.filterIngredients);
+      });
+    }
+  },
+  get computed() {
+    return this._computed;
+  },
+  set computed(value) {
+    this._computed = value;
   }
 };
 </script>

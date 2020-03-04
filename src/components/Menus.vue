@@ -1,8 +1,9 @@
 <template>
   <div id="menus">
+    <input type="text" v-model="filterMenus" placeholder="search menus" />
     <ul>
       <li
-        v-for="(menu, index) in menus"
+        v-for="(menu, index) in filteredmenus"
         :key="index"
         v-on:click="menu.show = !menu.show"
       >
@@ -16,6 +17,7 @@
 export default {
   data() {
     return {
+      filterMenus: "",
       menus: [
         {
           name: "Apple Pie",
@@ -46,6 +48,13 @@ export default {
         { name: "Watercress soup", carbon: "0mg", show: false }
       ]
     };
+  },
+  computed: {
+    filteredmenus: function() {
+      return this.menus.filter(menu => {
+        return menu.name.match(this.filterMenus);
+      });
+    }
   }
 };
 </script>
