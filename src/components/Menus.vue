@@ -26,7 +26,7 @@ export default {
         },
         { name: "Asparagus and eggs", carbon: "300mg", show: false },
         {
-          name: "Beef Burgignon",
+          name: "Beef Bourguignon",
           carbon: "3 tonnes",
           show: false
         },

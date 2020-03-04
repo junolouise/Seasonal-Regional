@@ -59,12 +59,6 @@ export default {
         return ingredient.name.match(this.filterIngredients);
       });
     }
-  },
-  get computed() {
-    return this._computed;
-  },
-  set computed(value) {
-    this._computed = value;
   }
 };
 </script>
