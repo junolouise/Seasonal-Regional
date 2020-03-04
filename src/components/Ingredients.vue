@@ -1,7 +1,15 @@
 <template>
   <div id="ingredients">
+    <form>
+      <label>Filter:</label>
+      <input type="text" v-model="filterIngredients" />
+    </form>
     <ul>
-      <li v-for="ingredient in ingredients" v-on:click="ingredient.show = !ingredient.show">
+      <li
+        v-for="(ingredient, index) in ingredients"
+        :key="index"
+        v-on:click="ingredient.show = !ingredient.show"
+      >
         <h2>{{ ingredient.name }}</h2>
         <h3 v-show="ingredient.show">{{ ingredient.season }}</h3>
       </li>
@@ -12,6 +20,7 @@
 export default {
   data() {
     return {
+      filterIngredients: "",
       ingredients: [
         {
           name: "Apple",

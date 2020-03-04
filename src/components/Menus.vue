@@ -1,7 +1,11 @@
 <template>
   <div id="menus">
     <ul>
-      <li v-for="menu in menus" v-on:click="menu.show = !menu.show">
+      <li
+        v-for="(menu, index) in menus"
+        :key="index"
+        v-on:click="menu.show = !menu.show"
+      >
         <h2>{{ menu.name }}</h2>
         <h3 v-show="menu.show">{{ menu.carbon }}</h3>
       </li>
